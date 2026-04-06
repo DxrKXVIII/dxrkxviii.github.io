@@ -1,30 +1,35 @@
-<style>
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>The Void</title>
+    
+    <style>
+        /* Aquí va la "pintura" de tu página */
+        body {
+            background-color: black; /* Fondo negro total */
+            color: white;            /* Letras blancas para que se vean */
+            margin: 0;               /* Quita bordes raros */
+            height: 100vh;           /* Que use todo el alto de la pantalla */
+            
+            /* Esto centra todo el contenido mágicamente */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-  body {
-    /* Usamos min-height para asegurar que cubra toda la pantalla */
-    min-height: 100vh;
-    
-    /* El gradiente va primero (arriba), la imagen después (abajo) */
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('fondo.png');
-    
-    /* Esto hace que la imagen cubra todo el fondo sin deformarse */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Esto le da un efecto pro al scrollear */
-    
-    color: white;
-    text-align: center;
-    font-family: 'Times New Roman', serif;
-    
-    /* Flexbox para centrar el contenido (opcional pero recomendado) */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-</style>
+        h1 {
+            font-size: 5rem;         /* Un tamaño grandote */
+            letter-spacing: 10px;    /* Espacio entre letras para que se vea "void" */
+            text-transform: uppercase; /* Todo en mayúsculas */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The Void</h1>
+
+</body>
+</html>
